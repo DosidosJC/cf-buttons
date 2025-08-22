@@ -11,7 +11,6 @@
       padding: 0;
       background-color: transparent;
     }
-
     body {
       display: flex;
       justify-content: center;
@@ -20,7 +19,6 @@
       flex-direction: column;
       font-family: sans-serif;
     }
-
     .button {
       font-size: 30px;
       padding: 15px 30px;
@@ -32,23 +30,12 @@
       opacity: 0;
       animation: fadeIn 1s ease forwards;
     }
-
-    .button:nth-child(1) {
-      animation-delay: 0.2s;
-    }
-
-    .button:nth-child(2) {
-      animation-delay: 0.4s;
-    }
-
-    .button:nth-child(3) {
-      animation-delay: 0.6s;
-    }
+    .button:nth-child(1) { animation-delay: 0.2s; }
+    .button:nth-child(2) { animation-delay: 0.4s; }
+    .button:nth-child(3) { animation-delay: 0.6s; }
 
     @keyframes fadeIn {
-      to {
-        opacity: 1;
-      }
+      to { opacity: 1; }
     }
   </style>
 </head>
