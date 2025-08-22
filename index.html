@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crossfire Buttons</title>
+  <style>
+    body {
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+      font-family: sans-serif;
+    }
+
+    .button {
+      font-size: 30px;
+      padding: 15px 30px;
+      background-color: white;
+      color: black;
+      text-decoration: none;
+      border-radius: 8px;
+      margin: 10px;
+      opacity: 0;
+      animation: fadeIn 1s ease forwards;
+    }
+
+    .button:nth-child(1) {
+      animation-delay: 0.2s;
+    }
+
+    .button:nth-child(2) {
+      animation-delay: 0.4s;
+    }
+
+    .button:nth-child(3) {
+      animation-delay: 0.6s;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a href="#" class="button">Developer</a>
+  <a href="#" class="button">Testers</a>
+  <a href="#" class="button">News</a>
+</body>
+</html>
